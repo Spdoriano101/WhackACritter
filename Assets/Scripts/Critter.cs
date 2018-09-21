@@ -6,7 +6,8 @@ public class Critter : MonoBehaviour {
 
     public Vector2 LowerRange;
     public Vector2 upperRange;
-    
+
+    public Score scoreDisplay;
     
     // Use this for initialization
 	void Start () {
@@ -29,6 +30,8 @@ public class Critter : MonoBehaviour {
 
     void OnMouseDown()
     {
+
+        scoreDisplay.ChangeValue(1);
 
         Destroy(gameObject);
 
